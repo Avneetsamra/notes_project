@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>Sticky Notes Project By: Avneet Kaur</title>
+	<script src="jscmptble_jq.js"></script>
+	<script src="fxns.js"></script>
+	<link href="style.css" rel="stylesheet" />
+	<script>
+	function delete(){
+		$('.btn_CloseTd52').click();
+	}
+	</script>
+</head>
+<body>
+
+  
+
+	<div id="controls" style="float:right; display:block;">
+		<img onclick= "saveNotes(); setStatus6v('Note_Created!')" id="btnNew" src="images\1.png" title="Add New Note">
+		<img onclick="$('#notes li').remove();saveNotes();setStatus6v('Notes Cleared')" id="btndel" src="images\3.png" title="Clear All Notes">
+	</div>
+  <ul id="notes">
+  </ul>
+	<div style="color:BLACK; background:WHITE;padding:2px;"> <button  onclick="clearStatus6v()" style="float:right;height:100%; " title="Clear Status" >Clear Status</button>
+	<div id="divStatus" style="padding:20px;"></div></div>
+	
+	
+</body>
+</html>
